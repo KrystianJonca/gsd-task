@@ -1,6 +1,9 @@
 import React from 'react';
 import classes from './App.module.css';
-import { Organizations, Repositories, Users } from './components';
+import { Organizations, Users } from './components';
+
+// I didn't include the repositories column as the github's api endpoint
+// for getting the repositories doesn't support per_page query, unlike the other two endpoints.
 
 const App: React.FC = () => {
   return (
@@ -10,7 +13,6 @@ const App: React.FC = () => {
       </header>
       <main className={classes.container}>
         <Organizations />
-        <Repositories />
         <Users />
       </main>
     </>

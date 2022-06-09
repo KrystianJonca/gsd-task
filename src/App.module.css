@@ -1,6 +1,6 @@
 .container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: flex-start;
   max-width: 1080px;
   margin: 1rem auto;
